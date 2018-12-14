@@ -122,6 +122,10 @@ fi
 
 export DISPLAY=:0
 
+# for building graphql.el
+
+export EMACS_VERSION=26.1
+
 # ssh-agent
 
 env=~/.ssh/agent.env
