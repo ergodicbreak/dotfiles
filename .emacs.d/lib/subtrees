@@ -6,3 +6,4 @@ git@github.com:vermiculus/graphql.el.git 0.1.1
 git@github.com:magit/magit-popup.git v2.12.4
 git@github.com:volrath/treepy.el.git 0.1.1
 git@github.com:magit/with-editor.git v2.7.4
+git@github.com:jwiegley/emacs-async.git v1.9.3
