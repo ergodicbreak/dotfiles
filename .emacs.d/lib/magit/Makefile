@@ -1,6 +1,8 @@
 -include config.mk
 include default.mk
 
+$(info VERSION is $(VERSION))
+
 ## ###################################################################
 
 .PHONY: lisp \

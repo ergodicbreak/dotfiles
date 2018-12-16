@@ -3,16 +3,15 @@
 (toggle-scroll-bar -1)
 
 ; package management thanks to https://spwhitton.name/blog/entry/emacs-pkg-subtree/
-(setq load-prefer-newer t)
+(setq load-prefer-newer t
+      package-enable-at-startup nil
+      vc-handled-backends nil)
 
 (defconst emacs-pkg-dir (concat user-emacs-directory "lib"))
 
 (let ((default-directory emacs-pkg-dir))
   (normal-top-level-add-to-load-path '("." "magit/lisp"))
   (normal-top-level-add-subdirs-to-load-path))
-
-(package-initialize)
-(setq package-enable-at-startup nil)
 
 (eval-when-compile
   (require 'use-package)
@@ -23,8 +22,7 @@
   (add-to-list 'Info-directory-list
 	       "~/dotfiles/.emacs.d/lib/magit/Documentation/")))
 
-(use-package magit
-  :load-path "~/dotfiles/.emacs.d/lib/magit/lisp")
+(use-package magit)
 	       
 
 
