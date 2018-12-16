@@ -149,3 +149,8 @@ elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
 fi
 
 unset env
+
+# for magit
+
+export EMACS_HOME=/usr/bin/emacs
+export PATH=$EMACS_HOME:$PATH 
