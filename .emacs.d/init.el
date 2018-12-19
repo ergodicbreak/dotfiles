@@ -1,6 +1,8 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
+(setq-default left-margin-width 1 right-margin-width 1)
+(set-window-buffer nil (current-buffer))
 
 ; package management thanks to https://spwhitton.name/blog/entry/emacs-pkg-subtree/
 (setq load-prefer-newer t
